@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#111318"/>
+  <!-- Browser -->
+  <rect x="60" y="100" width="140" height="200" rx="8" fill="#1a1d24" stroke="#c9a96e" stroke-width="1"/>
+  <rect x="72" y="116" width="116" height="12" rx="4" fill="#2a2d34"/>
+  <rect x="72" y="136" width="90" height="8" rx="3" fill="#3a3d44"/>
+  <rect x="72" y="152" width="100" height="8" rx="3" fill="#3a3d44"/>
+  <text x="130" y="110" text-anchor="middle" fill="#666" font-size="10" font-family="sans-serif">Frontend :3000</text>
+  <!-- Arrow -->
+  <line x1="200" y1="200" x2="300" y2="200" stroke="#c9a96e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="250" y="192" text-anchor="middle" fill="#888" font-size="9" font-family="sans-serif">POST /chat</text>
+  <!-- Backend -->
+  <rect x="310" y="100" width="180" height="200" rx="8" fill="#1a1d24" stroke="#c9a96e" stroke-width="1"/>
+  <rect x="324" y="116" width="152" height="12" rx="4" fill="#2a2d34"/>
+  <rect x="324" y="136" width="130" height="8" rx="3" fill="#3a3d44"/>
+  <text x="400" y="110" text-anchor="middle" fill="#666" font-size="10" font-family="sans-serif">FastAPI :8000</text>
+  <!-- Agent nodes -->
+  <rect x="330" y="165" width="60" height="22" rx="4" fill="#1e2d1e" stroke="#389092" stroke-width="0.5"/>
+  <text x="360" y="180" text-anchor="middle" fill="#389092" font-size="8" font-family="sans-serif">intent</text>
+  <rect x="400" y="165" width="70" height="22" rx="4" fill="#1e2d1e" stroke="#389092" stroke-width="0.5"/>
+  <text x="435" y="180" text-anchor="middle" fill="#389092" font-size="8" font-family="sans-serif">extract</text>
+  <rect x="340" y="195" width="60" height="22" rx="4" fill="#1e2d2d" stroke="#389092" stroke-width="0.5"/>
+  <text x="370" y="210" text-anchor="middle" fill="#389092" font-size="8" font-family="sans-serif">search</text>
+  <rect x="410" y="195" width="60" height="22" rx="4" fill="#1e2d2d" stroke="#389092" stroke-width="0.5"/>
+  <text x="440" y="210" text-anchor="middle" fill="#389092" font-size="8" font-family="sans-serif">risk</text>
+  <rect x="360" y="230" width="80" height="22" rx="4" fill="#2d1e1e" stroke="#c9a96e" stroke-width="0.5"/>
+  <text x="400" y="245" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="sans-serif">generate</text>
+  <!-- Arrow to ChromaDB -->
+  <line x1="490" y1="220" x2="560" y2="150" stroke="#888" stroke-width="1" marker-end="url(#arrow)"/>
+  <!-- ChromaDB -->
+  <rect x="565" y="120" width="160" height="60" rx="6" fill="#1a1d24" stroke="#555" stroke-width="0.5" stroke-dasharray="4"/>
+  <text x="645" y="152" text-anchor="middle" fill="#888" font-size="10" font-family="sans-serif">ChromaDB</text>
+  <text x="645" y="168" text-anchor="middle" fill="#666" font-size="8" font-family="sans-serif">向量检索</text>
+  <!-- DeepSeek -->
+  <rect x="565" y="220" width="160" height="50" rx="6" fill="#1a1d24" stroke="#555" stroke-width="0.5" stroke-dasharray="4"/>
+  <text x="645" y="248" text-anchor="middle" fill="#888" font-size="10" font-family="sans-serif">DeepSeek API</text>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#c9a96e" stroke-width="1"/>
+    </marker>
+  </defs>
+</svg>

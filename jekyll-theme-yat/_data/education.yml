@@ -1,0 +1,23 @@
+# 教育背景
+education:
+  - school: 人工智能专业
+    degree: 本科在读
+    period: 在读
+    notes:
+      - 主攻 AI 应用开发方向
+      - 后端工程 + AI 开发复合技能
+
+# 竞赛与荣誉
+honors:
+  - title: 创新创业大赛省级三等奖
+    year: ""
+    description: 负责团队 3D 建模与动画生成核心工作
+
+  - title: CET-4 英语四级
+    year: ""
+    description: ""
+
+# 语言能力
+languages:
+  - 中文（母语）
+  - 英语（CET-4）

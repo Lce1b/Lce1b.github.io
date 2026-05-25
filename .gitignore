@@ -1,0 +1,9 @@
+# Claude local settings
+.claude/settings.local.json
+
+# Jekyll / Ruby
+*.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock

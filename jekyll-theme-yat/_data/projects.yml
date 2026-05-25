@@ -1,0 +1,48 @@
+# 项目展示
+
+- slug: rag-customer-service
+  title: 企业级 RAG 智能客服 Agent
+  category: AI · 后端 · Full Stack
+  tech_stack:
+    - LangGraph
+    - FastAPI
+    - Next.js 14
+    - ChromaDB
+    - DeepSeek
+    - Docker
+  summary: >-
+    基于 LangGraph 多阶段 Agent 编排的企业级智能客服系统，集成 RAG 检索增强生成、
+    风险评估与人工转接机制，支持 SSE 流式响应。
+  highlights:
+    - 多阶段 Agent Pipeline：意图分类 → 字段提取 → 完整性检查 → 知识库检索 → 业务查询 → 风险评估 → 回复生成
+    - ChromaDB 向量存储 + text-embedding-3-small 实现语义检索
+    - 风险评估节点自动判断低/中/高风险，触发人工转接
+    - SSE 流式响应实时推送 Agent 节点状态
+  thumbnail: /assets/images/projects/rag-arch.svg
+  links:
+    - text: 项目代码
+      url: https://github.com/Lce1b/rag_test
+
+- slug: yae-miko-pet
+  title: 八重神子桌面宠物
+  category: Rust · Desktop · AI
+  tech_stack:
+    - Tauri v2
+    - Rust
+    - Axum
+    - MCP Protocol
+    - GPT-SoVITS
+    - DeepSeek API
+  summary: >-
+    基于 Tauri v2 的透明置顶桌面伴侣应用，像素动画角色实时反映 AI 工作状态，
+    集成 MCP 服务暴露宠物能力，支持语音合成与 AI 顾问对话。
+  highlights:
+    - 17 种精灵动画状态随 Claude Code hook 事件实时切换
+    - HTTP REST(:9527) + MCP JSON-RPC(:9528) 双端口后端架构
+    - AI 顾问模式：多轮对话精炼 prompt，结果写回剪贴板
+    - GPT-SoVITS 语音合成 + 预录 WAV 三级语音系统
+    - 系统托盘菜单：巨化 2x / 缩放 2x / 显示隐藏
+  thumbnail: /assets/images/projects/miko-pet.png
+  links:
+    - text: 项目代码
+      url: https://github.com/Lce1b/yae-miko-claude

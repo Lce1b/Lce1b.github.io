@@ -1,0 +1,65 @@
+# ============================================================
+# 许意达 · Yida Xu — Personal Portfolio
+# ============================================================
+
+# Site settings
+title: 许意达 · Yida Xu
+email: chinhdac630@gmail.com
+author: 许意达
+
+copyright: "Copyright © 2025-{currentYear} {author}"
+
+description: >-
+  人工智能专业 · AI 应用开发者 · 后端工程 + AI 开发 · 3D 建模与动画生成
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://Lce1b.github.io" # the base hostname & protocol
+favicon: ""
+
+# Yat date format
+yat:
+  date_format: "%b %d, %Y"
+
+# ============================================================
+# Theme Appearance
+# ============================================================
+
+# Dark mode by default
+night_mode: "on"
+
+# Premium dark background
+theme_color: coolblack
+
+# Warm gold accent
+brand_color: "#c9a96e"
+
+# ============================================================
+# Navigation
+# ============================================================
+
+header_pages:
+  - index.html
+  - projects.html
+  - about.html
+
+# Page default value
+defaults:
+  home:
+    heading: "许意达"
+    subheading: "AI 应用开发 · 后端工程 · 3D 动画生成"
+    banner: ""
+
+# ============================================================
+# Plugins & Build
+# ============================================================
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship

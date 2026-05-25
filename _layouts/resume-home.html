@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+{%- include views/header.html -%}
+
+{%- include extensions/hashlocate.html -%}
+{%- include extensions/theme-toggle.html -%}
+{%- include extensions/click-to-top.html -%}
+
+<main class="resume-home" aria-label="Content">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-avatar">
+      <img src="{{ '/assets/images/avatar.png' | relative_url }}" alt="许意达">
+    </div>
+    <h1 class="hero-name">{{ site.author }}</h1>
+    <p class="hero-tagline">AI 应用开发 · 后端工程 · 3D 动画生成</p>
+    <p class="hero-bio">
+      人工智能专业在读，专注 AI 应用开发与后端工程。<br>
+      擅长 LangGraph Agent 编排、RAG 检索增强生成、Tauri 桌面应用开发。<br>
+      具备 3D 建模与动画生成能力，曾获创新创业大赛省级三等奖。
+    </p>
+    <div class="hero-links">
+      <a href="{{ '/projects.html' | relative_url }}" class="hero-btn-primary">查看项目</a>
+      <a href="{{ '/about.html' | relative_url }}" class="hero-btn-secondary">了解更多</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section">
+    <h2 class="section-title">技能栈</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>语言</h3>
+        <div class="skill-tags">
+          {% for skill in site.data.skills.languages %}
+          <span class="skill-tag">{{ skill.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>框架</h3>
+        <div class="skill-tags">
+          {% for skill in site.data.skills.frameworks %}
+          <span class="skill-tag">{{ skill.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>工具 & 平台</h3>
+        <div class="skill-tags">
+          {% for skill in site.data.skills.tools %}
+          <span class="skill-tag">{{ skill.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>AI / LLM</h3>
+        <div class="skill-tags">
+          {% for skill in site.data.skills.ai_llm %}
+          <span class="skill-tag">{{ skill.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section">
+    <h2 class="section-title">项目展示</h2>
+    <div class="project-cards">
+      {% for project in site.data.projects %}
+      <a href="{{ '/projects/' | append: project.slug | append: '.html' | relative_url }}" class="project-card">
+        <div class="project-card-image">
+          {% if project.thumbnail contains '.svg' %}
+          <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}" loading="lazy">
+          {% elsif project.thumbnail contains '.png' or project.thumbnail contains '.jpg' %}
+          <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}" loading="lazy">
+          {% else %}
+          <div class="project-card-placeholder"></div>
+          {% endif %}
+        </div>
+        <div class="project-card-body">
+          <span class="project-card-category">{{ project.category }}</span>
+          <h3 class="project-card-title">{{ project.title }}</h3>
+          <p class="project-card-summary">{{ project.summary }}</p>
+          <div class="project-card-tech">
+            {% for tech in project.tech_stack %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Honors Section -->
+  <section class="section honors-section">
+    <h2 class="section-title">荣誉与竞赛</h2>
+    <div class="honors-list">
+      {% for honor in site.data.education.honors %}
+      <div class="honor-item">
+        <div class="honor-dot"></div>
+        <div class="honor-content">
+          <h3>{{ honor.title }}</h3>
+          {% if honor.description != "" %}
+          <p>{{ honor.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+{%- include views/footer.html -%}

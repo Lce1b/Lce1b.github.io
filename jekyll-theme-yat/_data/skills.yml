@@ -1,0 +1,54 @@
+# 技能栈
+# 分类组织，按熟练度排序
+
+languages:
+  - name: Python
+    level: 精通
+    icon: code
+  - name: Rust
+    level: 熟悉
+    icon: code
+  - name: JavaScript / TypeScript
+    level: 掌握
+    icon: code
+  - name: HTML / CSS
+    level: 掌握
+    icon: code
+
+frameworks:
+  - name: FastAPI
+    level: 精通
+  - name: LangGraph
+    level: 掌握
+  - name: Tauri v2
+    level: 熟悉
+  - name: Next.js
+    level: 掌握
+  - name: React
+    level: 掌握
+  - name: Tailwind CSS
+    level: 掌握
+  - name: Axum (Rust)
+    level: 熟悉
+
+tools:
+  - name: Docker & Compose
+    level: 掌握
+  - name: ChromaDB
+    level: 掌握
+  - name: Git & GitHub
+    level: 掌握
+  - name: GPT-SoVITS
+    level: 熟悉
+  - name: Blender / 3D 建模
+    level: 掌握
+  - name: MCP Protocol
+    level: 熟悉
+
+ai_llm:
+  - name: DeepSeek API
+  - name: OpenAI Compatible API
+  - name: RAG (检索增强生成)
+  - name: Embedding & 向量检索
+  - name: TTS 语音合成
+  - name: Agent 编排
